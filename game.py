@@ -1,8 +1,8 @@
 import pygame as pg
-pg.init()
 from pygame.locals import *
 import sys
 
+pg.init()
 class Game:
     def __init__(self):
         self.win = pg.display.set_mode((600,300))
@@ -16,5 +16,3 @@ class Game:
                     sys.exit()
 
 game = Game()
-
-
