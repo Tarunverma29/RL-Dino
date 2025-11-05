@@ -18,10 +18,3 @@ class Game:
 game = Game()
 
 
-# echo "# RL-Dino" >> README.md
-# git init
-# git add README.md
-# git commit -m "first commit"
-# git branch -M main
-# git remote add origin https://github.com/Tarunverma29/RL-Dino.git
-# git push -u origin main
