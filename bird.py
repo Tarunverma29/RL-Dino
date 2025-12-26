@@ -14,6 +14,8 @@ class Bird(pg.sprite.Sprite):
 
         self.rect=self.image.get_rect(midleft=(620, self.fly_height))
 
+        self.hitbox = self.rect.inflate(-20, -5)
+
         self.speed = 300
         self.image_index = 0
         self.anim_counter = 0
@@ -26,6 +28,8 @@ class Bird(pg.sprite.Sprite):
             self.image = self.images[self.image_index]
 
         self.rect.x -= self.speed * dt
+
+        self.hitbox = self.rect.inflate(-20, -5)
 
         if self.rect.right < 0:
             self.kill()        

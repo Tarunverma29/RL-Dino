@@ -18,6 +18,8 @@ class Dino(pg.sprite.Sprite):
     def resetdino(self):
         self.rect=self.image.get_rect(bottomleft=(75, 254))
 
+        self.hitbox = self.rect.inflate(-30, -14)
+
         self.image_index=0
         self.anim_counter=0
         self.anim_speed=4
@@ -57,6 +59,7 @@ class Dino(pg.sprite.Sprite):
 
             self.image = self.run_images[self.image_index]
 
+        self.hitbox = self.rect.inflate(-30, -14)
 
     def jumpdino(self):
         if self.is_on_ground:
